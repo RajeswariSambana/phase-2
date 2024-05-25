@@ -1,0 +1,10 @@
+def add(n):
+    if(n==0):
+        return 0
+    elif n%2==0:
+        return n+add(n-2)
+    else:
+        return add(n-1)
+n=int(input())
+res=add(n)
+print(res)
